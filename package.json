@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-beginner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juzdepom/nodejs-beginner.git"
+  },
+  "author": "Julia Gao-Miller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juzdepom/nodejs-beginner/issues"
+  },
+  "homepage": "https://github.com/juzdepom/nodejs-beginner#readme"
+}
