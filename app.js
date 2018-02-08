@@ -1,5 +1,26 @@
-function greeting(greet){
-    console.log(greet)
-}
+//HTTP is one of the core modules of node.
+const http = require('http');
+const fs = require('fs')
 
-greeting('Hello World')
+//Hostname represents the local server on your computer.
+const hostname = '127.0.0.1';
+const port = 3000;
+
+fs.readFile('index.html', (error, html) => {
+    if(error){
+        throw error;
+    }
+    const server = http.createServer((req, res) => {
+        res.statusCode = 200;
+        res.setHeader('Content-type', 'text/html');
+        res.write(html)
+        res.end();
+    });
+
+    server.listen(port, hostname, () => {
+        console.log('Server started on port '+ port)
+    })
+})
+
+
+
